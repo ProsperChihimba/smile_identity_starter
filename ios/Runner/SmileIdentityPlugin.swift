@@ -77,7 +77,7 @@ class SwiftSmilePlugin: NSObject, SIDCaptureManagerDelegate {
             }
             
             if (captureType == CaptureType.SELFIE_AND_ID_CAPTURE || captureType == CaptureType.ID_CAPTURE) {
-                let sidIdCaptureConfig = SIDIDCaptureConfig.Builder().setIdCaptureType(idCaptureType: IDCaptureType.Front).build()
+                let sidIdCaptureConfig = SIDIDCaptureConfig.Builder().setIdCaptureType(idCaptureType: IDCaptureType.Front_And_Back).build()
                 builder = builder.setSidIdCaptureConfig(sidIdCaptureConfig: sidIdCaptureConfig!)
             }
             
